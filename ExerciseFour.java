@@ -6,27 +6,48 @@
  */
 
 import java.util.Scanner;
+import java.lang.String;
 
 public class ExerciseFour {
-  public static void main(String args[]){
+  public static void main(String[] args){
+    exercise1();
+    exercise2();
+    exercise3();
+    exercise4();
+    exercise5();
+    exercise6();
+    exercise7();
+    exercise8();
+    exercise9();
+    exercise10();
+  }   
+  
+  //Exercise 4.1
+  public static void exercise1(){
     Scanner input = new Scanner(System.in);
-    
-    //Exercise 4.1
+    System.out.println("Enter your age");
     int number = input.nextInt();
     if (number > 65) {
-      System.out.println("You are a senior citizen.");
+    System.out.println("You are a senior citizen.");
+    input.close();
     }
-    
-    //Exercise 4.2
+  }
+  
+  //Exericse 4.2
+  public static void exercise2(){
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter your mark");
     int mark = input.nextInt();
     if (mark >= 50) {
       System.out.println("You passed.");
     } else {
       System.out.println("Better luck next time");
-    } 
+    } input.close();
+  }
     
     //Exercise 4.3
+  public static void exercise3(){
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter the temperature");
     int temperature = input.nextInt();
     if (temperature > 30) {
@@ -37,18 +58,24 @@ public class ExerciseFour {
       System.out.println("cool");
     } else {
       System.out.println("cold");
-    }
+    } input.close();
+  }
     
     //Exercise 4.4
+  public static void exercise4(){  
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter a number from 1-10");
     int guess = input.nextInt();
     if (guess == 7) {
       System.out.println("You win!");
     } else {
       System.out.println("Game over");
-    }
+    } input.close();
+  }
     
     //Exercise 4.5
+  public static void exercise5(){
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter a mark");
     int markOne = input.nextInt();
     if (markOne >= 75 && markOne <= 100) {
@@ -59,18 +86,24 @@ public class ExerciseFour {
         System.out.println("Fail");
     } else {
       System.out.println("Invalid");
-    }
+    } input.close();
+  }
     
     //Exercise 4.6
+  public static void exercise6() {
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter your password");
     String password = input.next();
     if (password.equals("happy")) {
       System.out.println("You are logged in");
     } else {
       System.out.println("Incorrect password");
-    }
+    } input.close();
+  }
     
     //Exercise 4.7
+  public static void exercise7() {
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter a number");
     int numberOne = input.nextInt();
     System.out.println("Enter another number");
@@ -81,16 +114,22 @@ public class ExerciseFour {
       System.out.println(numberOne + " is greater than " + numberTwo);
     } else {
       System.out.println(numberOne + " is equal to " + numberTwo);
-    }
+    } input.close();
+  }
     
     //Exercise 4.8
+  public static void exercise8() {
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter the number of times you want to print Hello");
     int numberHello = input.nextInt();
     for (int i = 0; i < numberHello; i++ ) {
       System.out.println("Hello");
-    }
+    } input.close();
+  }
     
     //Exercise 4.9
+  public static void exercise9() {
+    Scanner input = new Scanner(System.in);
     System.out.println("Enter a word");
     String wordOne = input.next();
     System.out.println("Enter another word");
@@ -116,9 +155,12 @@ public class ExerciseFour {
       } else {
         System.out.println(wordThree + " " + wordTwo + " " + wordOne);
       }
-    }
+    } input.close();
+  }
     
     //Exercise 4.10
+  public static void exercise10() {
+    Scanner input = new Scanner(System.in);
     System.out.println("Reply with Yes or No");
     System.out.println("Do you have $200,000 to $500,000?");
     String response = input.next();
@@ -144,7 +186,7 @@ public class ExerciseFour {
       } else {
         System.out.println("Purchase a Honda Fit");
       }
-    }
+    } input.close();
   }
 } 
       
