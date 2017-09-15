@@ -10,6 +10,7 @@ import java.lang.String;
 
 public class ExerciseFour {
   public static void main(String[] args){
+    
     exercise1();
     exercise2();
     exercise3();
@@ -189,6 +190,3 @@ public class ExerciseFour {
     } input.close();
   }
 } 
-      
-    
-    
